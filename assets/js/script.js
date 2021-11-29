@@ -1,4 +1,7 @@
 
+
+
+// array of questions used in quiz
  const questions = [
     {
         question: "What does HTML stand for?",
@@ -16,9 +19,9 @@
         answer: "b. other arrays"
     },
     {
-        question: "Commonly used data types DO NOT include:",
-        choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
-        answer: "c. alerts"
+        question: "Which one of these is a JavaScript package manager?",
+        choices: ["a. Node.js", "b. TypeScript", "c. npm", "d. none of the above"],
+        answer: "c. npm"
     },
     {
         question: "What is the correct syntax for writing a function in JS?",
@@ -26,9 +29,9 @@
         answer: "b. function myFunction()"
     },
     {
-        question: "How would you call a function named myFunction?",
-        choices: ["a. call myFunction()", "b. call function myFunction()", "c. myFunction()", "d. call myFunction"],
-        answer: "c. myFunctions()"
+        question: "How would you call a function named getMilk?",
+        choices: ["a. call getMilk()", "b. call function getMilk()", "c. getMilk()", "d. call getMilk"],
+        answer: "c. getMilk()"
     },
     {
         question: "To see if two variables are equal in an if / else statement you would use ____.",
@@ -36,12 +39,12 @@
         answer: "b. =="
     },
     {
-        question: "The first index of an array is ____.",
+        question: "The first index of an array is always ____.",
         choices: ["a. 0", "b. 1", "c. 8", "d. any"],
         answer: "a. 0"
     },
     {
-        question: "Who invented JavaScript?",
+        question: "Who was the person that invented JavaScript?",
         choices: ["a. Douglas Crockford", "b. Sheryl Sandberg", "c. Brendan Eich", "d. Ben Javascript"],
         answer: "c. Brendan Eich"
     },
@@ -51,9 +54,9 @@
         answer: "c. if(i == 5)"
     },
     {
-        question: "How do you add a comment in a JavaScript?",
-        choices: ["a. //This is a comment", "b. <!--This is a comment-->", "c. 'This is a comment", "d. * This is a comment *"],
-        answer: "a. //This is a comment"
+        question: "Which tool can you use to ensure code quality?",
+        choices: ["a. Angular", "b. jQuery", "c. RequireJS", "d. ESLint"],
+        answer: "d. ESLint"
     },
     {
         question: "Which event occurs when the user clicks on an HTML element?",
@@ -62,7 +65,7 @@
     }
 ];
 
-// grab references to elements
+// references to elements
 var timer = document.getElementById("timer");
 var timeLeft = document.getElementById("timeLeft");
 var timesUp = document.getElementById("timesUp");
@@ -91,17 +94,14 @@ var clearHighScoreBtn = document.getElementById("clearHighScoreBtn");
 var viewHighScore = document.getElementById("viewHighScore");
 var listOfHighScores = document.getElementById("listOfHighScores");
 
-// define other variables
 var correctAns = 0;
 var questionNum = 0;
 var scoreResult;
 var questionIndex = 0;
 
-/**
- * FUNCTIONS
- */
 
-// WHEN I click the start button, timer starts
+
+// WHEN I click the start button, timer starts and the quiz questions pop up
 var totalTime = 151;
 function newQuiz() {
     questionIndex = 0;
@@ -128,10 +128,7 @@ function newQuiz() {
     showQuiz();
 };
 
-// console.log(questions[questionIndex].question);
-// console.log(questions[questionIndex].choices);
-
-// then presented with questions and choices
+// this presents me with questions
 function showQuiz() {
     nextQuestion();
 }
@@ -144,7 +141,7 @@ function nextQuestion() {
     choiceD.textContent = questions[questionIndex].choices[3];
 }
 
-// after question is answered, show if correct or wrong
+// when the question is answered, show if I was correct or wrong
 function checkAnswer(answer) {
 
     var lineBreak = document.getElementById("lineBreak");
@@ -152,23 +149,23 @@ function checkAnswer(answer) {
     answerCheck.style.display = "block";
 
     if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
-        // correct answer, add 1 score to final score
+        // correct answer, add 1 point to final score
         correctAns++;
         // console.log(correctAns);
         answerCheck.textContent = "Correct!";
     } else {
-        // wrong answer, deduct 10 second from timer
-        totalTime -= 10;
+        // wrong answer, deducts 12 second from timer
+        totalTime -= 12;
         timeLeft.textContent = totalTime;
         answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
     }
 
     questionIndex++;
-    // repeat with the rest of questions 
+    // repeat
     if (questionIndex < questions.length) {
         nextQuestion();
     } else {
-        // if no more question, run game over function
+        // if there are no more question, run game over function
         gameOver();
     }
 }
@@ -193,7 +190,7 @@ function gameOver() {
     finalScore.textContent = correctAns;
 }
 
-// enter initial and store highscore in local storage
+// enter initial and store high score in local storage
 function storeHighScores(event) {
     event.preventDefault();
 
@@ -264,7 +261,7 @@ function showHighScores() {
 }
 
 /**
- * ADD EVENT LISTENERS
+ * ALL EVENT LISTENERS
  */
 
 startQuizBtn.addEventListener("click", newQuiz);
