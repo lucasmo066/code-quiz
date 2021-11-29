@@ -1,17 +1,17 @@
 
  const questions = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-        choices: ["a. <js>", "b. <javascript>", "c. <scripting>", "d. <script>"],
-        answer: "d. <script>"
+        question: "What does HTML stand for?",
+        choices: ["a. hyper text preprocessor", "b. hyper text markup language", "c. hyper text multiple language", "d. hyper tool multi language"],
+        answer: "b. hyper text markup language"
     },
     {
-        question: "String values must be enclosed within _____ when being assigned to variables.",
-        choices: ["a. commas", "b. curly brackets", "c. quotes", "d. parenthesis"],
-        answer: "c. quotes"
+        question: "What does SQL stand for",
+        choices: ["a. styling question language", "b. stylesheet query language", "c. statement question language", "d. structured query language"],
+        answer: "d. structured query language"
     },
     {
-        question: "Arrays in JavaScript can be used to store _____.",
+        question: "What can arrays be used for in JavaScript?",
         choices: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
         answer: "b. other arrays"
     },
@@ -21,12 +21,12 @@
         answer: "c. alerts"
     },
     {
-        question: "How do you create a function in JavaScript",
+        question: "What is the correct syntax for writing a function in JS?",
         choices: ["a. function = myFunction()", "b. function myFunction()", "c. function:myFunction()", "d. createMyFunction()"],
         answer: "b. function myFunction()"
     },
     {
-        question: "How do you call a function named myFunction?",
+        question: "How would you call a function named myFunction?",
         choices: ["a. call myFunction()", "b. call function myFunction()", "c. myFunction()", "d. call myFunction"],
         answer: "c. myFunctions()"
     },
