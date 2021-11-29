@@ -87,7 +87,8 @@
  }
  /* questions styling */
   
- #questionDiv {
+ #questionDiv,
+ #highScoreSection {
     width: 550px;
     height: 400px;
     position: absolute;
@@ -106,22 +107,11 @@
     padding: 20px 60px;
     margin: 15px 25px;
  }
- #questionTitle {
-  justify-content: center;
-  font-size: 25px;
- }
-  
-  
-  
-  
-  
+
+ 
  #finalScore {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
- }
-  
- span {
-    font-family: 'Archivo', sans-serif;
  }
   
  p {
