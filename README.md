@@ -3,8 +3,8 @@
 ## Deployed Application
 https://lucasmo066.github.io/code-quiz/
 
-![Screenshot](firstscreen.PNG)
-![Screenshot](highScoreScreen.PNG)
+![Screenshot](firstscreen.png)
+![Screenshot](highScoreScreen.png)
 ![Screenshot](questionscreen.png)
 
 
