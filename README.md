@@ -1,6 +1,11 @@
 # code-quiz
 
 ## Deployed Application
+https://lucasmo066.github.io/code-quiz/
+
+![Screenshot](firstscreen.PNG)
+![Screenshot](highScoreScreen.PNG)
+![Screenshot](questionscreen.png)
 
 
 ## Criteria:
