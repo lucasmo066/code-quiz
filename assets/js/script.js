@@ -1,25 +1,25 @@
 
 
 
-// array of questions used in quiz
+// array of questions used in quiz with answers
  const questions = [
     {
-        question: "What does HTML stand for?",
-        choices: ["a. hyper text preprocessor", "b. hyper text markup language", "c. hyper text multiple language", "d. hyper tool multi language"],
-        answer: "b. hyper text markup language"
+        question: "What year did Freddie Freeman win MVP of the National League?",
+        choices: ["a. 2019", "b. 2020", "c. 2012", "d. 2021"],
+        answer: "b. 2020"
     },
     {
-        question: "What does SQL stand for",
-        choices: ["a. styling question language", "b. stylesheet query language", "c. statement question language", "d. structured query language"],
-        answer: "d. structured query language"
+        question: "Who is the Braves' all-time home run leader?",
+        choices: ["a. Andruw Jones", "b. Eddie Matthews", "c. Chipper Jones", "d. Hank Aaron"],
+        answer: "d. Hank Aaron"
     },
     {
-        question: "What can arrays be used for in JavaScript?",
-        choices: ["a. numbers and strings", "b. other arrays", "c. booleans", "d. all of the above"],
-        answer: "b. other arrays"
+        question: "How many consecutive years did the Braves win the NL East division?",
+        choices: ["a. 12", "b. 14", "c. 10", "d. 5"],
+        answer: "b. 14"
     },
     {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "?",
         choices: ["a. Node.js", "b. TypeScript", "c. npm", "d. none of the above"],
         answer: "c. npm"
     },
@@ -65,7 +65,7 @@
     }
 ];
 
-// references to elements
+// references to elements used in index.html
 var timer = document.getElementById("timer");
 var timeLeft = document.getElementById("timeLeft");
 var timesUp = document.getElementById("timesUp");
@@ -101,7 +101,7 @@ var questionIndex = 0;
 
 
 
-// WHEN I click the start button, timer starts and the quiz questions pop up
+// WHEN I click the start button, then a timer starts..
 var totalTime = 151;
 function newQuiz() {
     questionIndex = 0;
@@ -128,7 +128,7 @@ function newQuiz() {
     showQuiz();
 };
 
-// this presents me with questions
+// this presents me with another question
 function showQuiz() {
     nextQuestion();
 }
@@ -149,12 +149,12 @@ function checkAnswer(answer) {
     answerCheck.style.display = "block";
 
     if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
-        // correct answer, add 1 point to final score
+        // correct answer adds 5 points to final score
         correctAns++;
         // console.log(correctAns);
         answerCheck.textContent = "Correct!";
     } else {
-        // wrong answer, deducts 12 second from timer
+        // wrong answer, deducts 12 seconds from the timer
         totalTime -= 12;
         timeLeft.textContent = totalTime;
         answerCheck.textContent = "Wrong! The correct answer is: " + questions[questionIndex].answer;
@@ -165,7 +165,7 @@ function checkAnswer(answer) {
     if (questionIndex < questions.length) {
         nextQuestion();
     } else {
-        // if there are no more question, run game over function
+        // if there are no more questions
         gameOver();
     }
 }
@@ -206,7 +206,7 @@ function storeHighScores(event) {
     summary.style.display = "none";
     highScoreSection.style.display = "block";   
 
-    // store scores into local storage
+    // stores the score into local storage
     var savedHighScores = localStorage.getItem("high scores");
     var scoresArray;
 
@@ -260,9 +260,7 @@ function showHighScores() {
     }
 }
 
-/**
- * ALL EVENT LISTENERS
- */
+// /* ALL EVENT LISTENERS FOR BUTTONS */
 
 startQuizBtn.addEventListener("click", newQuiz);
 choiceA.addEventListener("click", chooseA);
