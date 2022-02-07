@@ -19,17 +19,17 @@
         answer: "b. 14"
     },
     {
-        question: "?",
-        choices: ["a. Node.js", "b. TypeScript", "c. npm", "d. none of the above"],
-        answer: "c. npm"
+        question: "Where did the Braves franchise begin?",
+        choices: ["a. Atlanta", "b. Milwaukee", "c. Boston", "d. none of the above"],
+        answer: "c. Boston"
     },
     {
-        question: "What is the correct syntax for writing a function in JS?",
-        choices: ["a. function = myFunction()", "b. function myFunction()", "c. function:myFunction()", "d. createMyFunction()"],
-        answer: "b. function myFunction()"
+        question: "What was the name of the Braves mascot at Fulton County Stadium?",
+        choices: ["a. Choppy", "b. Chief Knockahoma", "c. Ted Jones", "d. Blooper"],
+        answer: "b. Chief Knockahoma"
     },
     {
-        question: "How would you call a function named getMilk?",
+        question: "",
         choices: ["a. call getMilk()", "b. call function getMilk()", "c. getMilk()", "d. call getMilk"],
         answer: "c. getMilk()"
     },
