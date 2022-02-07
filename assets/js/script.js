@@ -29,39 +29,39 @@
         answer: "b. Chief Knockahoma"
     },
     {
-        question: "",
-        choices: ["a. call getMilk()", "b. call function getMilk()", "c. getMilk()", "d. call getMilk"],
-        answer: "c. getMilk()"
+        question: "Who is the Braves' most recent Rookie of the Year?",
+        choices: ["a. Mike Soroka", "b. Freddie Freeman", "c. Ronald Acuña Jr.", "d. Jason Heyward"],
+        answer: "c. Ronald Acuña Jr."
     },
     {
-        question: "To see if two variables are equal in an if / else statement you would use ____.",
-        choices: ["a. =", "b. ==", "c. 'equals'", "d. !="],
-        answer: "b. =="
+        question: "What division do the Braves play in?",
+        choices: ["a. AL East", "b. NL East", "c. NL South", "d. AL South"],
+        answer: "b. NL East"
     },
     {
-        question: "The first index of an array is always ____.",
-        choices: ["a. 0", "b. 1", "c. 8", "d. any"],
-        answer: "a. 0"
+        question: "Who won the World Series MVP with the Braves in 2021?",
+        choices: ["a. Jorge Soler", "b. Dansby Swanson", "c. Guy Fieri", "d. Brian Snitker"],
+        answer: "a. Jorge Soler"
     },
     {
-        question: "Who was the person that invented JavaScript?",
-        choices: ["a. Douglas Crockford", "b. Sheryl Sandberg", "c. Brendan Eich", "d. Ben Javascript"],
-        answer: "c. Brendan Eich"
+        question: "What year are the Braves famous for winning the Pennant after finishing last the year before?",
+        choices: ["a. 1969", "b. 1998", "c. 1992", "d. 1994"],
+        answer: "c. 1992"
     },
     {
-        question: "How to write an IF statement in JavaScript?",
-        choices: ["a. if i == 5 then", "b. if i = 5 then", "c. if(i == 5)", "d. if i = 5"],
-        answer: "c. if(i == 5)"
+        question: "What color uniforms do the Braves wear on Friday home games? ",
+        choices: ["a. Grey", "b. White", "c. Red", "d. Navy"],
+        answer: "c. Red"
     },
     {
-        question: "Which tool can you use to ensure code quality?",
-        choices: ["a. Angular", "b. jQuery", "c. RequireJS", "d. ESLint"],
-        answer: "d. ESLint"
+        question: "Who holds the Braves' single season Saves record?",
+        choices: ["a. Julio Teheran", "b. Luke Jackson", "c. Craig Kimbrel ", "d. John Smoltz"],
+        answer: "d. John Smoltz"
     },
     {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        choices: ["a. onclick", "b. onchange", "c. onmouseover", "d. onmouseclick"],
-        answer: "a. onclick"
+        question: "Who holds the Braves' single season Runs record?",
+        choices: ["a. Chipper Jones", "b. Andruw Jones", "c. Ted Jones", "d. none of the above"],
+        answer: "a. Chipper Jones"
     }
 ];
 
